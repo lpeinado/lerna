@@ -1,0 +1,10 @@
+{
+    "name": "@shared/widgets",
+    "version": "1.0.0",
+    "description": "A dummy vue component to share across vue projects with Lerna monorepo",
+    "main": "dist/index.js",
+    "module": "src/index.js",
+    "scripts": {
+      "transpile": "vue-cli-service build --target lib ./src/index.js"
+    }
+  }
