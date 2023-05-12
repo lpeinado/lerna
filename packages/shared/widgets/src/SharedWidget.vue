@@ -12,11 +12,3 @@
         }
     }
 </script>
-
-<style scoped>
-.shared-widget {
-    color:red;
-    border: 1px dashed rgb(32, 108, 175);
-    padding: 15px;
-}
-</style>

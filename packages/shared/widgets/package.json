@@ -1,10 +1,19 @@
 {
-    "name": "@shared/widgets",
-    "version": "1.0.0",
-    "description": "A dummy vue component to share across vue projects with Lerna monorepo",
-    "main": "dist/index.js",
-    "module": "src/index.js",
-    "scripts": {
-      "transpile": "vue-cli-service build --target lib ./src/index.js"
-    }
+  "name": "@shared/widgets",
+  "version": "1.0.0",
+  "description": "A dummy vue component to share across vue projects with Lerna monorepo",
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "scripts": {
+    "transpile": "vue-cli-service build --target lib ./src/index.js",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "rollup": "^3.21.6"
+  },
+  "devDependencies": {
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-vue2": "^0.8.1"
   }
+}
